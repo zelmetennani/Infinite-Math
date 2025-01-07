@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinte Math</title>
+    <link rel="icon" href="Pfp.png" type="image/png">
+    
+    <!-- Include Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/examples/js/geometries/RoundedBoxGeometry.js"></script>
+
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2a2a2a;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #equationContainer {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        #equation-modal {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        #equation-modal img {
+            display: block;
+            margin: 20px auto;
+        }
+
+        #equation-modal h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 15px 30px;
+            box-sizing: border-box;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .title {
+            color: white;
+            font-size: clamp(18px, 5vw, 24px);
+            margin: 0;
+            padding-right: 20px;
+        }
+
+        .menu {
+            display: flex;
+            gap: clamp(10px, 3vw, 20px);
+            margin-right: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: clamp(14px, 4vw, 16px);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+
+        .social-icon {
+            color: white;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            color: #4a9eff;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 10px 15px;
+            }
+
+            .menu {
+                margin-right: 10px;
+            }
+
+            #equation-modal {
+                padding: 15px;
+            }
+
+            .title {
+                font-size: 18px;
+            }
+
+            .menu a {
+                padding: 5px 8px;
+                font-size: 14px;
+            }
+
+            .footer {
+                padding: 10px;
+            }
+            
+            .social-icon {
+                font-size: 20px;
+            }
+        }
+
+        @media (hover: none) {
+            .menu a {
+                padding: 8px 12px;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Click a box!</h1>
+        <div class="menu">
+            <a href="about.html">About</a>
+            <a href="merch.html">Merch</a>
+        </div>
+    </div>
+    <div id="equationContainer"></div>
+    
+    <!-- Link to your app.js -->
+    <script src="app.js"></script>
+
+    <!-- Footer with social media links -->
+    <div class="footer">
+        <a href="https://x.com/Infinite_math_" target="_blank" class="social-icon">
+            <i class="fa-brands fa-x"></i>
+        </a>
+        <a href="https://www.instagram.com/infinitemath_/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://web.facebook.com/profile.php?id=61571741004210" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+</body>
+</html>
