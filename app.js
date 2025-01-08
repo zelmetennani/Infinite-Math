@@ -40,8 +40,7 @@ if (typeof THREE === "undefined") {
     const totalRevolutions = spiralParams.totalRevolutions;
   
     // Array of equation URLs with higher DPI
-    const equations = [
-        { 
+    const equations = [{ 
             image: "https://latex.codecogs.com/png.latex?\\dpi{300}%5Csum_%7Bn%3D1%7D%5E%5Cinfty%5Cfrac%7B1%7D%7Bn%5E2%7D",
             name: "Sum of squares" 
         },
@@ -56,8 +55,8 @@ if (typeof THREE === "undefined") {
         { 
             image: "https://latex.codecogs.com/png.latex?\\dpi{300}%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B1%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D",
             name: "Arc Length" 
-        }
-    ];
+        },
+    "https://v5.airtableusercontent.com/v3/u/36/36/1736078400000/AfGN4n_RcNoE6NJbeto1jQ/QdFvGQHWrRudzsUGBeJtfSLXXYTcndTo4qwmdPTuga3lqNekirFgvMlH4HuiaeQ6LUGLdwTA5i_B5hHQbjt4JqIHRBGi2h_tMxi42Bxv3UcFYtXDEjbN82GiM1AyvZt39VlBHQbI6T7sCKHzsruq8XNrjY2GJ9S8OLmO99wMoFs/x-VWVHUEaK0WnRa_1rO7vLZ9e_l64hjw1RoLtYjBvts"];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
