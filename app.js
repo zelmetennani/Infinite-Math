@@ -60,6 +60,7 @@ if (typeof THREE === "undefined") {
     {"image": "https://v5.airtableusercontent.com/v3/u/36/36/1736078400000/AfGN4n_RcNoE6NJbeto1jQ/QdFvGQHWrRudzsUGBeJtfSLXXYTcndTo4qwmdPTuga3lqNekirFgvMlH4HuiaeQ6LUGLdwTA5i_B5hHQbjt4JqIHRBGi2h_tMxi42Bxv3UcFYtXDEjbN82GiM1AyvZt39VlBHQbI6T7sCKHzsruq8XNrjY2GJ9S8OLmO99wMoFs/x-VWVHUEaK0WnRa_1rO7vLZ9e_l64hjw1RoLtYjBvts", "name": "Rational Pi Integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
+    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"}];
   
     // Card geometry and material
