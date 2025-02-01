@@ -43,7 +43,6 @@ if (typeof THREE === "undefined") {
     const equations = [
         {"image": "https://latex.codecogs.com/png.latex?%5Csum_%7Bn%3D1%7D%5E%5Cinfty%5Cfrac%7B1%7D%7Bn%5E2%7D", "name": "Sum of squares"},
         {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B0%7D%5E%7B%5Cinfty%7D%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2+%2B+1%7Ddx", "name": "Sin Integral"},
-        {"image": "https://latex.codecogs.com/png.latex?e%5E%7Bi%5Cpi%7D+%2B+1+%3D+0", "name": "Euler's Identity"},
         {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B1%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D", "name": "Arc Length"},
         {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"}
     ];
