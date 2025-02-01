@@ -40,63 +40,13 @@ if (typeof THREE === "undefined") {
     const totalRevolutions = spiralParams.totalRevolutions;
   
     // Array of equation URLs with higher DPI
-    const equations = [{ 
-            image: "https://latex.codecogs.com/png.latex?\\dpi{300}%5Csum_%7Bn%3D1%7D%5E%5Cinfty%5Cfrac%7B1%7D%7Bn%5E2%7D",
-            name: "Sum of squares" 
-        },
-        { 
-            image: "https://latex.codecogs.com/png.latex?\\dpi{300}%5Cint_%7B0%7D%5E%7B%5Cinfty%7D%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2+%2B+1%7Ddx",
-            name: "Sin Integral" 
-        },
-        { 
-            image: "https://latex.codecogs.com/png.latex?\\dpi{300}e%5E%7Bi%5Cpi%7D+%2B+1+%3D+0",
-            name: "Euler's Identity" 
-        },
-        { 
-            image: "https://latex.codecogs.com/png.latex?\\dpi{300}%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B1%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D",
-            name: "Arc Length" 
-        },
-    "https://v5.airtableusercontent.com/v3/u/36/36/1736078400000/AfGN4n_RcNoE6NJbeto1jQ/QdFvGQHWrRudzsUGBeJtfSLXXYTcndTo4qwmdPTuga3lqNekirFgvMlH4HuiaeQ6LUGLdwTA5i_B5hHQbjt4JqIHRBGi2h_tMxi42Bxv3UcFYtXDEjbN82GiM1AyvZt39VlBHQbI6T7sCKHzsruq8XNrjY2GJ9S8OLmO99wMoFs/x-VWVHUEaK0WnRa_1rO7vLZ9e_l64hjw1RoLtYjBvts",
-    {"image": "https://v5.airtableusercontent.com/v3/u/36/36/1736078400000/AfGN4n_RcNoE6NJbeto1jQ/QdFvGQHWrRudzsUGBeJtfSLXXYTcndTo4qwmdPTuga3lqNekirFgvMlH4HuiaeQ6LUGLdwTA5i_B5hHQbjt4JqIHRBGi2h_tMxi42Bxv3UcFYtXDEjbN82GiM1AyvZt39VlBHQbI6T7sCKHzsruq8XNrjY2GJ9S8OLmO99wMoFs/x-VWVHUEaK0WnRa_1rO7vLZ9e_l64hjw1RoLtYjBvts", "name": "Rational Pi Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"}];
+    const equations = [
+        {"image": "https://latex.codecogs.com/png.latex?%5Csum_%7Bn%3D1%7D%5E%5Cinfty%5Cfrac%7B1%7D%7Bn%5E2%7D", "name": "Sum of squares"},
+        {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B0%7D%5E%7B%5Cinfty%7D%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2+%2B+1%7Ddx", "name": "Sin Integral"},
+        {"image": "https://latex.codecogs.com/png.latex?e%5E%7Bi%5Cpi%7D+%2B+1+%3D+0", "name": "Euler's Identity"},
+        {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B1%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D", "name": "Arc Length"},
+        {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"}
+    ];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
@@ -283,11 +233,8 @@ if (typeof THREE === "undefined") {
     }
   
     function showEquationDetails(equationData) {
-      // Remove existing modal if present
-      const existingModal = document.getElementById('equation-modal');
-      if (existingModal) {
-        existingModal.remove();
-      }
+      // Close any existing modals first
+      closeAllModals();
   
       // Create modal
       const modal = document.createElement('div');
@@ -312,7 +259,7 @@ if (typeof THREE === "undefined") {
       modal.innerHTML = `
         <h2>${equationData.name}</h2>
         <img src="${equationData.image}" alt="${equationData.name}" style="max-width: 100%;">
-        <button onclick="this.parentElement.remove()" style="
+        <button onclick="closeAllModals()" style="
           position: absolute;
           top: 10px;
           right: 10px;
@@ -329,6 +276,12 @@ if (typeof THREE === "undefined") {
       `;
   
       document.body.appendChild(modal);
+    }
+  
+    // Add this new function to close all modals
+    function closeAllModals() {
+      const modals = document.querySelectorAll('#equation-modal');
+      modals.forEach(modal => modal.remove());
     }
   }
   
