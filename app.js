@@ -40,11 +40,11 @@ if (typeof THREE === "undefined") {
     const totalRevolutions = spiralParams.totalRevolutions;
   
     // Array of equation URLs with higher DPI
-    const equations = [
-    {"image": "https://latex.codecogs.com/png.latex?%5Csum_%7Bn%3D1%7D%5E%5Cinfty%5Cfrac%7B1%7D%7Bn%5E2%7D", "name": "Sum of squares"},
+    const equations = [{"image": "https://latex.codecogs.com/png.latex?%5Csum_%7Bn%3D1%7D%5E%5Cinfty%5Cfrac%7B1%7D%7Bn%5E2%7D", "name": "Sum of squares"},
     {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B1%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D", "name": "Arc Length"},
     {"image": "https://latex.codecogs.com/png.latex?%5C%5Cint%5B%7B0%7D%5E%7B%5Cinfty%7D%5D%20%5Cfrac%7B%5Csin(nx)%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D%20%5Ctanh(%5Cfrac%7B%5Cpi%7D%7B2%7Dn)", "name": "Oscillation Rational Hyperbolic Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5Ceta(s)%20%3D%20%5Csum_%7Bn%3D1%7D%5E%5Cinfty%20%5Cfrac%7B(-1)%5E%7Bn-1%7D%7D%7Bn%5Es%7D", "name": "Dirichlet Eta Function"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5Ceta(s)%20%3D%20%5Csum_%7Bn%3D1%7D%5E%5Cinfty%20%5Cfrac%7B(-1)%5E%7Bn-1%7D%7D%7Bn%5Es%7D", "name": "Dirichlet Eta Function"},
+    {"image": "https://latex.codecogs.com/png.latex?%5CDelta%20S%20%3D%20%5Cint%20%5Cfrac%7BdQ%7D%7BT%7D", "name": "Entropy Change"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
