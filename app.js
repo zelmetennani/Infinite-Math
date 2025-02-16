@@ -47,7 +47,8 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5CDelta%20S%20%3D%20%5Cint%20%5Cfrac%7BdQ%7D%7BT%7D", "name": "Entropy Change"},
     {"image": "https://latex.codecogs.com/png.latex?%5CPhi%20%3D%20B%20A%20%5Ccos%5Ctheta", "name": "Magnetic Flux"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7BdN%7D%7Bdt%7D%20%3D%20-%5Clambda%20N", "name": "Radioactive Decay"},
-    {"image": "https://latex.codecogs.com/png.latex?%5Cint%20e%5Ex%20dx%20%3D%20e%5Ex%20%2B%20C", "name": "Exponential Integral"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint%20e%5Ex%20dx%20%3D%20e%5Ex%20%2B%20C", "name": "Exponential Integral"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B0%7D%5E%5Cinfty%20e%5E%7B-x%7D%20dx%20%3D%201", "name": "Exponential Integral"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
