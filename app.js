@@ -50,7 +50,8 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5Cint%20e%5Ex%20dx%20%3D%20e%5Ex%20%2B%20C", "name": "Exponential Integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B0%7D%5E%5Cinfty%20e%5E%7B-x%7D%20dx%20%3D%201", "name": "Exponential Integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B0%7D%5E%7B%5Cinfty%7D%20%5Cfrac%7B1%7D%7Bx%5E2%20%2B%201%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D", "name": "Rational \u03c0 Integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B0%7D%5E%7B%5Cpi%7D%20%5Csin%20x%20dx%20%3D%202", "name": "Sine Integral"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B0%7D%5E%7B%5Cpi%7D%20%5Csin%20x%20dx%20%3D%202", "name": "Sine Integral"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B0%7D%5E%7B1%7D%20%5Cfrac%7B%5Cln%20x%7D%7Bx%7D%20dx%20%3D%20-%5Cfrac%7B%5Cpi%5E2%7D%7B6%7D", "name": "Log Integral"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
