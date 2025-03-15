@@ -54,7 +54,8 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B0%7D%5E%7B1%7D%20%5Cfrac%7B%5Cln%20x%7D%7Bx%7D%20dx%20%3D%20-%5Cfrac%7B%5Cpi%5E2%7D%7B6%7D", "name": "Log Integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5Clambda%20%3D%20%5Cfrac%7Bh%7D%7Bp%7D", "name": "De Broglie Wavelength"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cnabla%20%5Ccdot%20%5Cmathbf%7BE%7D%20%3D%20%5Cfrac%7B%5Crho%7D%7B%5Cvarepsilon_0%7D", "name": "Gauss's Law"},
-    {"image": "https://latex.codecogs.com/png.latex?%5Cnabla%20%5Ctimes%20%5Cmathbf%7BB%7D%20%3D%20%5Cmu_0%20%5Cmathbf%7BJ%7D", "name": "Amp\u00e8re's Law"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5Cnabla%20%5Ctimes%20%5Cmathbf%7BB%7D%20%3D%20%5Cmu_0%20%5Cmathbf%7BJ%7D", "name": "Amp\u00e8re's Law"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Coint%20%5Cmathbf%7BB%7D%20%5Ccdot%20d%5Cmathbf%7Bs%7D%20%3D%20%5Cmu_0%20I", "name": "Maxwell-Amp\u00e8re's Law"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
