@@ -60,7 +60,8 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5Comega%20%3D%202%5Cpi%20f", "name": "Angular Frequency"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cprod_%7Bn%3D1%7D%5E%5Cinfty%20%5Cleft(%201%20%2B%20%5Cfrac%7B1%7D%7Bn%5E2%7D%20%5Cright)%20%3D%20%5Cfrac%7B%5Csinh(%5Cpi)%7D%7B%5Cpi%7D", "name": "Infinite Product"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cpsi(x,t)%20%3D%20A%20e%5E%7Bi(kx%20-%20%5Comega%20t)%7D", "name": "Quantum Wave Function"},
-    {"image": "https://latex.codecogs.com/png.latex?%5Csin%5E2%5Ctheta%20%2B%20%5Ccos%5E2%5Ctheta%20%3D%201", "name": "Trigonometric Identity"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5Csin%5E2%5Ctheta%20%2B%20%5Ccos%5E2%5Ctheta%20%3D%201", "name": "Trigonometric Identity"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Csum_%7Bn%3D0%7D%5E%5Cinfty%20%5Cfrac%7B1%7D%7Bn%21%7D%20%3D%20e", "name": "Taylor Series for e"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
