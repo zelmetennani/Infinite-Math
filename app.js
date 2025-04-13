@@ -62,7 +62,8 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5Cpsi(x,t)%20%3D%20A%20e%5E%7Bi(kx%20-%20%5Comega%20t)%7D", "name": "Quantum Wave Function"},
     {"image": "https://latex.codecogs.com/png.latex?%5Csin%5E2%5Ctheta%20%2B%20%5Ccos%5E2%5Ctheta%20%3D%201", "name": "Trigonometric Identity"},
     {"image": "https://latex.codecogs.com/png.latex?%5Csum_%7Bn%3D0%7D%5E%5Cinfty%20%5Cfrac%7B1%7D%7Bn%21%7D%20%3D%20e", "name": "Taylor Series for e"},
-    {"image": "https://latex.codecogs.com/png.latex?%5CGamma(%5Cfrac%7B1%7D%7B2%7D)%20%3D%20%5Csqrt%7B%5Cpi%7D", "name": "Gamma at half"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5CGamma(%5Cfrac%7B1%7D%7B2%7D)%20%3D%20%5Csqrt%7B%5Cpi%7D", "name": "Gamma at half"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Ceta(n)%20%3D%20%5Csum_%7Bk%3D1%7D%5E%7B%5Cinfty%7D%20%5Cfrac%7B(-1)%5E%7Bk%2B1%7D%7D%7Bk%5En%7D", "name": "Dirichlet eta function"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
