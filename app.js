@@ -66,7 +66,8 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5Ceta(n)%20%3D%20%5Csum_%7Bk%3D1%7D%5E%7B%5Cinfty%7D%20%5Cfrac%7B(-1)%5E%7Bk%2B1%7D%7D%7Bk%5En%7D", "name": "Dirichlet eta function"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpi%5E2%7D%7B6%7D%20%3D%20%5Csum_%7Bn%3D1%7D%5E%5Cinfty%20%5Cfrac%7B1%7D%7Bn%5E2%7D", "name": "Basel problem"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpi%5E2%7D%7B8%7D%20%3D%20%5Csum_%7Bn%3D0%7D%5E%5Cinfty%20%5Cfrac%7B1%7D%7B(2n%2B1)%5E2%7D", "name": "Odd inverse square series"},
-    {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpi%7D%7B2%7D%20%3D%20%5Csum_%7Bn%3D0%7D%5E%5Cinfty%20%5Cfrac%7B(2n)!!%7D%7B(2n%2B1)!!%7D", "name": "Continued fraction for \u03c0"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpi%7D%7B2%7D%20%3D%20%5Csum_%7Bn%3D0%7D%5E%5Cinfty%20%5Cfrac%7B(2n)!!%7D%7B(2n%2B1)!!%7D", "name": "Continued fraction for \u03c0"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Cpi%7D%7B4%7D%20%3D%20%5Carctan%5Cleft(%5Cfrac%7B1%7D%7B2%7D%5Cright)%20%2B%20%5Carctan%5Cleft(%5Cfrac%7B1%7D%7B3%7D%5Cright)", "name": "Arctangent identity"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
