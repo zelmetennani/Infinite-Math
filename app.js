@@ -71,7 +71,8 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B%5CGamma(z)%7D%20%3D%20z%20e%5E%7B%5Cgamma%20z%7D%20%5Cprod_%7Bn%3D1%7D%5E%7B%5Cinfty%7D%20%5Cleft(1%20%2B%20%5Cfrac%7Bz%7D%7Bn%7D%20%5Cright)%20e%5E%7B-z%2Fn%7D", "name": "Gamma function reciprocal"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B%5Cpi%7D%20%3D%20%5Cfrac%7B2%5Csqrt%7B2%7D%7D%7B9801%7D%20%5Csum_%7Bk%3D0%7D%5E%5Cinfty%20%5Cfrac%7B(4k)!%281103%2B26390k%29%7D%7B(k!)%5E4%20396%5E%7B4k%7D%7D", "name": "Ramanujan's \u03c0 formula"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7Bd%5En%7D%7Bdx%5En%7D%20(x%5En%20%5Cln%20x)%20%3D%20n!%20%5Cln%20x%20%2B%20n!%20H_n", "name": "Derivative of log powers"},
-    {"image": "https://latex.codecogs.com/png.latex?%5Cgamma%20%3D%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cleft(%20%5Csum_%7Bk%3D1%7D%5En%20%5Cfrac%7B1%7D%7Bk%7D%20-%20%5Cln%20n%20%5Cright)", "name": "Euler-Mascheroni constant"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5Cgamma%20%3D%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cleft(%20%5Csum_%7Bk%3D1%7D%5En%20%5Cfrac%7B1%7D%7Bk%7D%20-%20%5Cln%20n%20%5Cright)", "name": "Euler-Mascheroni constant"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20e%5E%7B-x%5E2%7D%20dx%20%3D%20%5Csqrt%7B%5Cpi%7D", "name": "Gaussian integral"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
