@@ -73,7 +73,8 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5Cfrac%7Bd%5En%7D%7Bdx%5En%7D%20(x%5En%20%5Cln%20x)%20%3D%20n!%20%5Cln%20x%20%2B%20n!%20H_n", "name": "Derivative of log powers"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cgamma%20%3D%20%5Clim_%7Bn%20%5Cto%20%5Cinfty%7D%20%5Cleft(%20%5Csum_%7Bk%3D1%7D%5En%20%5Cfrac%7B1%7D%7Bk%7D%20-%20%5Cln%20n%20%5Cright)", "name": "Euler-Mascheroni constant"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20e%5E%7B-x%5E2%7D%20dx%20%3D%20%5Csqrt%7B%5Cpi%7D", "name": "Gaussian integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cinfty%20%5Cfrac%7B%5Csin%20x%7D%7Bx%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D", "name": "Dirichlet integral"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cinfty%20%5Cfrac%7B%5Csin%20x%7D%7Bx%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D", "name": "Dirichlet integral"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cinfty%20%5Cfrac%7Bx%5Ea%7D%7Be%5Ex%20-%201%7D%20dx%20%3D%20%5CGamma(a%2B1)%5Czeta(a%2B1)", "name": "Bose integral"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
