@@ -75,7 +75,8 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20e%5E%7B-x%5E2%7D%20dx%20%3D%20%5Csqrt%7B%5Cpi%7D", "name": "Gaussian integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cinfty%20%5Cfrac%7B%5Csin%20x%7D%7Bx%7D%20dx%20%3D%20%5Cfrac%7B%5Cpi%7D%7B2%7D", "name": "Dirichlet integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cinfty%20%5Cfrac%7Bx%5Ea%7D%7Be%5Ex%20-%201%7D%20dx%20%3D%20%5CGamma(a%2B1)%5Czeta(a%2B1)", "name": "Bose integral"},
-    {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cpi%20%5Cln(2%5Csin%20%5Cfrac%7Bx%7D%7B2%7D)%20dx%20%3D%20%5Cpi%20%5Cln%202", "name": "Log-sine integral"}];
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cpi%20%5Cln(2%5Csin%20%5Cfrac%7Bx%7D%7B2%7D)%20dx%20%3D%20%5Cpi%20%5Cln%202", "name": "Log-sine integral"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cpi%20%5Cln(2%5Csin(x%2F2))%20dx%20%3D%20%5Cpi%20%5Cln%202", "name": "Another sine log integral"}];
   
     // Card geometry and material
     const cardGeometry = new THREE.BoxGeometry(1, 1, 1); // Equal dimensions for a cube
