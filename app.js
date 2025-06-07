@@ -77,6 +77,7 @@ if (typeof THREE === "undefined") {
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cinfty%20%5Cfrac%7Bx%5Ea%7D%7Be%5Ex%20-%201%7D%20dx%20%3D%20%5CGamma(a%2B1)%5Czeta(a%2B1)", "name": "Bose integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cpi%20%5Cln(2%5Csin%20%5Cfrac%7Bx%7D%7B2%7D)%20dx%20%3D%20%5Cpi%20%5Cln%202", "name": "Log-sine integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cpi%20%5Cln(2%5Csin(x%2F2))%20dx%20%3D%20%5Cpi%20%5Cln%202", "name": "Another sine log integral"},
+    {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cpi%20%5Cln(2%5Csin(x%2F2))%20dx%20%3D%20%5Cpi%20%5Cln%202", "name": "Another sine log integral"},
     {"image": "https://latex.codecogs.com/png.latex?%5Cint_0%5E%5Cpi%20%5Cln(2%5Csin(x%2F2))%20dx%20%3D%20%5Cpi%20%5Cln%202", "name": "Another sine log integral"}];
   
     // Card geometry and material
